@@ -1,0 +1,16 @@
+[package]
+name = "orwell"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = "1.0.86", features = ["backtrace"] }
+axum = "0.7.5"
+image = { version = "0.25.2", default-features = false, features = ["png"] }
+serde = { version = "1.0.204", features = ["derive"] }
+surrealdb = { version = "1.5.4", features = ["kv-speedb"] }
+tokio = { version = "1.39.2", features = ["macros", "rt-multi-thread"] }
+tower-http = { version = "0.5.2", features = ["trace"] }
+trace = "0.1.7"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
